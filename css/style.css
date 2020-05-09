@@ -454,10 +454,22 @@ ul, li {
 }
 #About .about-wrapper {
 	width: 100%;
-	padding: 80px 50px 80px 10px;
+	padding: 90px 50px 80px 10px;
 }
 #About .about-wrapper p:last-child {
 	margin: 0;
+}
+
+#About .hak-wrapper{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 /* #About:after { */
 /* 	content: ''; */
