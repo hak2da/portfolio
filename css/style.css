@@ -102,8 +102,15 @@ ul, li {
 	z-index: 9;
 }
 #Header.header-fixed {
+	float:right;
+	right:0;
 	background: rgba(0, 0, 0, 0.8);
+	border-radius: 2px 2px 30px 30px;
 	transition: all 0.3s ease-in-out;
+	
+	
+	
+	
 }
 #Header.header-fixed .site-logo-wrap {
 	padding: 15px 0;
@@ -316,6 +323,69 @@ ul, li {
 	border: 2px solid #0098aa;
 	transition: all 0.3s ease-in-out;
 }
+
+/* Resume section style goes here */
+#Resume {
+	padding: 80px 0 50px;
+	background-color: #fafafa;
+}
+#Resume .block-heading {
+	margin-bottom: 100px;
+}
+#Resume .block-heading p:last-of-type {
+	margin: 0;
+}
+#Resume .Resume-wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#Resume .each-service {
+	position: relative;
+	text-align: center;
+	max-width: calc(33.33% - 30px);
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  margin: 0 15px 50px;
+  padding: 55px 20px 25px;
+}
+#Resume .each-service .service-icon {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 15px;
+	background-color: #0098aa;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+}
+#Resume .each-service .service-icon i {
+	font-size: 24px;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+#Resume .each-service:hover .service-icon {
+	background-color: #ffffff;
+	border: 1px solid #0098aa;
+	transition: all 0.2s ease-in-out;
+}
+#Resume .each-service:hover .service-icon i {
+	color: #0098aa;
+	transition: all 0.2s ease-in-out;
+}
+#Resume .each-service h5 {
+	margin: 0 0 10px;
+}
+#Resume .each-service p:last-child {
+	margin: 0;
+}
+
 /* services section style goes here */
 #Services {
 	padding: 80px 0 50px;
@@ -451,6 +521,7 @@ ul, li {
 /* about us section style goes here */
 #About {
 	position: relative;
+	padding: 80px 0 50px;
 }
 #About .about-wrapper {
 	width: 100%;

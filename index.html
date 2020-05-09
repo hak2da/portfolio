@@ -35,18 +35,18 @@
 <body data-spy="scroll" data-target=".main-navigation" data-offset="150">
     <section id="MainContainer">
         <!-- Header starts here -->
-        <header id="Header">
-            <nav class="main-navigation">
+        <header float="right" id="Header">
+            <nav  class="main-navigation">
                 <div class="container clearfix">
-                    <div class="site-logo-wrap">
-                        <a class="logo" href="#"><img src="images/ds-logo.svg" alt="Design Studio"></a>
-                    </div>
+<!--                     <div class="site-logo-wrap"> -->
+<!--                         <a class="logo" href="#"><img src="images/ds-logo.svg" alt="Design Studio"></a> -->
+<!--                     </div> -->
                     <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
                     <div class="main-menu hidden-md-down">
                         <ul class="menu-list">
                             <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a></li>
                             <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
-                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Education">Education</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Resume">Resume</a></li>
                             <li><a class="nav-link" href="javascript:void(0)" data-target="#Services">Skills</a></li>
                             <li><a class="nav-link" href="javascript:void(0)" data-target="#Portfolio">Portfolio</a></li>
                             <li><a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Contact</a></li>
@@ -78,42 +78,44 @@
 
         <!-- About Us section starts here -->
         <section id="About">
-            <div class="container">
-                <div style="float:left;" class="about-wrapper">
-	                <div style="width:30%; float:left; height:100%; text-align:center;" ">
-	                	
-	                	<img id="about-img1" style="width:90%;heigth:90%;" src="images/p-one.jpg" alt="p-one">
-	                	<img id="about-img2" style="width:90%;heigth:90%; display:none;" src="images/p-one.jpg" alt="p-one">
-	                	<img id="about-img3" style="width:90%;heigth:90%; display:none;" src="images/p-one.jpg" alt="p-one">
-	                	
-	                </div>
-	                <div style="width:70%;float:left; height:100%; padding-left:5%">
-	                    <h2>About Me</h2>
-	                    <p>앱과 웹에 큰 관심을 두게 되어서 이전 생활을 정리하고 애플리케이션입문서로 자바와 안드로이드 앱 프로그래밍을 독학했습니다.<br>
-						공부하던 도중 안드로이드 개발자과정을 알게 되어서 상경을 해서 강의를 들었습니다<br><br>
-						
-						저는 알고리즘 문제해결능력과 문제에 대한 끈기가 제 무기라고 생각합니다.
-						프로그래머스나 백준알고리즘사이트에서 문제를 풀면서 탐구를 많이하며 제코드와 다른 사람의 코드를 비교해서
-						다른 사람의 코드가 좋을때 제것으로 만들기 위해 문서화 시키고 있습니다.
-						그리고 제가 만든 서비스에 자부심을 가진다는게 이일을 함에 있어 최대 장점이라고 생각합니다.</p>
-	                
-                </div>
-                
-                </div>
-            </div>
-        </section>
+			<div class="container">
+			<div class="about-wrapper">
+<!-- 				<div style="float: left;" > -->
+				<div >
+					<div style="width: 30%; float: left; height: 100%; text-align: center;">
+						<img id="about-img1" style="width: 90%; heigth: 90%;"
+							src="images/p-one.jpg" alt="p-one">
+					</div>
+					<div
+						style="width: 70%; float: left; height: 100%; padding-left: 5%">
+						<h2>About Me</h2>
+						<p>
+							앱과 웹에 큰 관심을 두게 되어서 자바를 독학했습니다.<br> 공부하던 도중 자바 개발자 과정을 알게 되어서
+							상경 해서 강의를 들었습니다.<br>
+							<br> 저는 주어진 문제에 대한 끈기가 제 무기라고 생각합니다. 프로젝트를 하면서 탐구를 많이 하며 다른
+							사람의 코드를 읽고 좋은 코드가 있을때 제 것으로 만들기 위해 문서화를 하고 있습니다. 그리고 제가 만든 서비스에
+							자부심을 가진다는게 이 일을 함에 있어 최대 장점이라고 생각합니다.
+						</p>
+
+					</div>
+<!-- 				</div> -->
+				</div>
+			</div>
+		</section>
         <!-- About Us section ends here -->
         
-        <!-- About Us section starts here -->
-        <section id="Education">
-            <div class="container">
+        <!-- Resume Us section starts here -->
+        <section id="Resume">
+            <div style="margin-top:5%;" class="container">
                 <div class="block-heading">
-                    <h2>이력</h2>
+                <div class="resume-wrapper">
+                    <h2 style="float:left;width:100%;">이력</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
                 </div>
             </div>
         </section>
-        <!-- About Us section ends here -->
+        <!-- Resume Us section ends here -->
         
         
         <!-- Services section starts here -->
@@ -297,47 +299,10 @@
         <section id="ContactUs">
             <div class="container contact-container">
                 <h3 class="contact-title">Contact</h3>
-                <div class="contact-outer-wrapper">
-                    <div class="address-block">
-                        <p class="add-title">Contact Details</p>
-                        <div class="c-detail">
-                            <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <span class="c-info">12 Avenue center, st. marks road, CA</span>
-                        </div>
-                        <div class="c-detail">
-                            <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span> <span class="c-info">+41982399090000</span>
-                        </div>
-                        <div class="c-detail">
-                            <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span> <span class="c-info">click@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="form-wrap">
-                        <p class="add-title">Send Us Message</p>
-                        <form>
-                            <div class="fname floating-label">
-                                <input type="text" class="floating-input" name="full name" id="full-name-field" />
-                                <label for="full-name-field">Full Name</label>
-                            </div>
-                            <div class="email floating-label">
-                                <input type="email" class="floating-input" name="email" id="mail-field" />
-                                <label for="mail-field">Email</label>
-                            </div>
-                            <div class="contact floating-label">
-                                <input type="tel" class="floating-input" name="contact" id="contact-us-field" />
-                                <label for="contact-us-field">Contact</label>
-                            </div>
-                            <div class="company floating-label">
-                                <input type="text" class="floating-input" name="company" id="company-field" />
-                                <label for="company-field">Company</label>
-                            </div>
-                            <div class="user-msg floating-label">
-                                <textarea class="floating-input" name="user message" id="user-msg-field"></textarea>
-                                <label for="user-msg-field" class="msg-label">Your Message</label>
-                            </div>
-                            <div class="submit-btn">
-                                <button type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                <div style="text-align:center; margin-top:5%" class="contact-outer-wrapper">
+                <p class="add-title">Email : hak2daa@gmail.com</p>
+                <p class="add-title">Tel : 82)010-8923-1234</p>
+         
                 </div>
             </div>
         </section>
@@ -345,18 +310,10 @@
         <!-- Footer section starts here -->
         <footer id="Footer">
             <div class="container">
-<!--                 <div class="social-share"> -->
-<!--                     <ul> -->
-<!--                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
-<!--                     </ul> -->
-<!--                 </div> -->
-                
+
                 <div class="footer-logo-wrap">
-<!--                     Design Studio &copy; 2018. Designed by <a href="https://www.position2.com/">Position2</a> -->
-				                    <h3>봐주셔서 정말 감사합니다 <a href="#">: )</a></h3>
+
+	                  <h3>봐주셔서 감사합니다 <a href="#">: )</a></h3>
                      
                 </div>
             </div>
@@ -387,7 +344,7 @@
 
 			logo = 2;
 
-		} else {
+		} else if(logo == 2){
 
 			//$("#about-img1").fadeIn(1000);
 			$("#about-img1").fadeOut();
@@ -395,8 +352,15 @@
 			setTimeout(function(){$("#about-img1").attr("src", "images/p-one.jpg")},500);
 			$("#about-img1").fadeIn(700);
 
-			logo = 1;
+			logo = 3;
 
+		}else if(logo ==3){
+			$("#about-img1").fadeOut();
+			//$("#about-img1").attr("src", "images/p-six.jpg");
+			setTimeout(function(){$("#about-img1").attr("src", "images/p-three.jpg")},500);
+			$("#about-img1").fadeIn(700);
+
+			logo = 1;
 		}
 
 	}
