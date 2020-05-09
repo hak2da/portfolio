@@ -80,13 +80,15 @@
         <section id="About">
             <div class="container">
                 <div style="float:left;" class="about-wrapper">
-	                <div style="width:30%; float:left; height:100%; ">
-	                	<h2>About Me</h2>
-	                	<img style="width:90%;heigth:90%;" src="images/p-one.jpg" alt="p-one">
+	                <div style="width:30%; float:left; height:100%; text-align:center;" ">
+	                	
+	                	<img id="about-img1" style="width:90%;heigth:90%;" src="images/p-one.jpg" alt="p-one">
+	                	<img id="about-img2" style="width:90%;heigth:90%; display:none;" src="images/p-one.jpg" alt="p-one">
+	                	<img id="about-img3" style="width:90%;heigth:90%; display:none;" src="images/p-one.jpg" alt="p-one">
 	                	
 	                </div>
-	                <div style="width:70%;float:left; height:100%; padding-top:5%;">
-	                    
+	                <div style="width:70%;float:left; height:100%; padding-left:5%">
+	                    <h2>About Me</h2>
 	                    <p>앱과 웹에 큰 관심을 두게 되어서 이전 생활을 정리하고 애플리케이션입문서로 자바와 안드로이드 앱 프로그래밍을 독학했습니다.<br>
 						공부하던 도중 안드로이드 개발자과정을 알게 되어서 상경을 해서 강의를 들었습니다<br><br>
 						
@@ -362,5 +364,42 @@
         <!-- Footer section ends here -->
     </section>
 </body>
+
+<script>
+
+
+
+	var logo = 1;
+
+	t = setInterval(aboutimgChg, 2500); // 1000 = 1초입니다.
+	
+	//setTimeout(function (){alert("test")},1000);
+
+	function aboutimgChg() {
+
+		if (logo == 1) {
+			
+			$("#about-img1").fadeOut();
+			//$("#about-img1").attr("src", "images/p-one.jpg");
+			setTimeout(function(){$("#about-img1").attr("src", "images/p-six.jpg")},500);
+			$("#about-img1").fadeIn(700);
+			//$("#about-img2").fadeOut(1000);
+
+			logo = 2;
+
+		} else {
+
+			//$("#about-img1").fadeIn(1000);
+			$("#about-img1").fadeOut();
+			//$("#about-img1").attr("src", "images/p-six.jpg");
+			setTimeout(function(){$("#about-img1").attr("src", "images/p-one.jpg")},500);
+			$("#about-img1").fadeIn(700);
+
+			logo = 1;
+
+		}
+
+	}
+</script>
 
 </html>
