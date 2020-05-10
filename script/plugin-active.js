@@ -34,6 +34,7 @@ $(document).ready(function() {
   window.sr = ScrollReveal();
   // Customizing a reveal set 
   sr.reveal('.each-service', { origin: 'bottom', distance: '100px', duration: 1000, delay: 0, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+  sr.reveal('.service-item-container', { origin: 'bottom', distance: '100px', duration: 1000, delay: 0, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
   // sript for fixed header on scroll
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();

@@ -346,45 +346,7 @@ ul, li {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#Resume .each-service {
-	position: relative;
-	text-align: center;
-	max-width: calc(33.33% - 30px);
-  border: 1px solid #e6e6e6;
-  background-color: #fff;
-  margin: 0 15px 50px;
-  padding: 55px 20px 25px;
-}
-#Resume .each-service .service-icon {
-	position: absolute;
-	top: -30px;
-	left: 50%;
-	transform: translateX(-50%);
-	padding: 15px;
-	background-color: #0098aa;
-	border-radius: 50%;
-	transition: all 0.2s ease-in-out;
-}
-#Resume .each-service .service-icon i {
-	font-size: 24px;
-	color: #fff;
-	transition: all 0.2s ease-in-out;
-}
-#Resume .each-service:hover .service-icon {
-	background-color: #ffffff;
-	border: 1px solid #0098aa;
-	transition: all 0.2s ease-in-out;
-}
-#Resume .each-service:hover .service-icon i {
-	color: #0098aa;
-	transition: all 0.2s ease-in-out;
-}
-#Resume .each-service h5 {
-	margin: 0 0 10px;
-}
-#Resume .each-service p:last-child {
-	margin: 0;
-}
+
 
 /* services section style goes here */
 #Services {
@@ -445,8 +407,64 @@ ul, li {
 	margin: 0 0 10px;
 }
 #Services .each-service p:last-child {
-	margin: 0;
+	margin: 0;	
 }
+
+#Services .service-item-container{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.Skill_image_container{
+	text-align: center;
+    display: inline-block;
+    width: 114px;
+    height: 116px;
+    border-radius: 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+
+.Skill_image_container:hover .Skill_label {
+	visibility: visible;
+	animation: fadeout1 .5s;
+	-moz-animation: fadeout1 .5s;
+	-webkit-animation: fadeout1 .5s;
+	-o-animation: fadeout1 .5s
+}
+
+@media ( max-width :576px) {
+	.Skill_image_container {
+		width: 100px;
+		height: 100px;
+		margin: 5px
+	}
+	.Skill_label {
+		width: 100px;
+		height: 100px
+	}
+}
+
+.Skill_label{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 30px 30px;
+    width: 114px;
+    height: 116px;
+    padding: 10px;
+    opacity: .8;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    visibility: hidden;
+}
+
+
 /* porfolio style goes here */
 #Portfolio {
 	background-color: #fafafa;
