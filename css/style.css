@@ -605,8 +605,13 @@ width:70%;height:100%;display: inline-flex;text-align:left;
 	width:50px;height:50px
 }
 
+#Portfolio .previewimg{
+	width:60px;
+	height:60px;
+}
+
 #Portfolio .weblinkimg{
-width:45px;height:45px"
+width:45px;height:45px
 
 }
 
