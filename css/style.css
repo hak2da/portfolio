@@ -571,7 +571,7 @@ ul, li {
 	
 }
 #Portfolio .rightcontentintroductbox{
-	width:100%;height:auto;display: inline-block;margin-bottom:1%;font-size:18px;
+	width:100%;height:auto;display: inline-block;margin-bottom:1%;font-size:0.9vw;
 	
 }	
 #Portfolio .rightcontentintroductleft{
@@ -583,7 +583,7 @@ width:70%;height:100%;display: inline-flex;text-align:left;
 }
 
 #Portfolio .rightcontentlinebox{
-	width:100%;height:auto;display: inline-block;margin-bottom:1%;font-size:18px;
+	width:100%;height:auto;display: inline-block;margin-bottom:1%;font-size:0.9vw;
 	
 	}
 	

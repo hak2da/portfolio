@@ -269,7 +269,9 @@
                 
 					<div class="itembox">
 						<div class="leftimgbox">
-							<img class="leftimg" src="images/preview/roomsite.png">
+						<a href="javascript:void(0);" onclick="callfunction('roomprojectpreview')"  >
+							<img class="leftimg"  src="images/preview/oneroomplanet/roomsite.png">
+						</a>
 						</div>
 						<div class="rightcontentbox">
 						<h3 class="rightcontenttitle">Oneroom Planet</h3>
@@ -281,7 +283,7 @@
 							<font class="rightcontentintroductright">
 							원룸에 대한 정보를 공유할 수 있는 커뮤니티를 형성하고자 이 프로젝트를 진행했습니다.
 							</font>
-						</div>
+						</div>	
 						
 						<div class="rightcontentlinebox">
 							<font class="rightcontentlineleft">
@@ -314,7 +316,7 @@
 						<a class="etcalink" href="https://github.com/hak2da/roomproject" target="_blank">
 							<img title="View on Github" class="gitimg" src="images/logo/svg/github-logo.svg" alt="github"/>
 						</a>
-						<a class="etcalink" href="https://www.naver.com/" target="_blank">
+						<a class="etcalink" id="roomprojectpreview" data-fancybox="test" href="images/preview/oneroomplanet/roomsite.png">
 							<img title="Preview" class="previewimg" src="images/logo/svg/preview.png" alt="preview"/>
 						</a>
 						<a class="etcalink" href="http://www.oneroomplanet.kro.kr/roomProject/" target="_blank">
@@ -324,6 +326,10 @@
 						  
 						</div>
 					</div>
+					
+					<img style="display:none;" data-fancybox="test" src="images/preview/oneroomplanet/방내놓기.png">
+					<img style="display:none;" data-fancybox="test" src="images/preview/oneroomplanet/회원가입.png">
+					<img style="display:none;" data-fancybox="test" src="images/preview/oneroomplanet/카카오맵.png">
 					
 					<div class="itembox">
 						<div class="leftimgbox">
@@ -486,6 +492,10 @@
 			logo = 1;
 		}
 
+	}
+	
+	function callfunction(trig){
+		$("#"+trig).trigger("click");
 	}
 </script>
 
