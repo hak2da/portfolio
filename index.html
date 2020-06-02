@@ -71,7 +71,7 @@
             <div class="hero-content">
             
                 <font style="font-size:80px;font-weight:600;color:white; width:100%;" id="bannermain">안녕하세요</font><br>
-                <font style="font-size:60px;font-weight:600;color:white;width:100%;" id="bannersub">웹 개발자 옥영학 포트폴리오입니다.</font>
+                <font style="font-size:60px;font-weight:600;color:white;width:100%;" id="bannersub">개발자 옥영학 포트폴리오입니다.</font>
 <!--                 <a href="#" class="hero-cta">Get Started</a> -->
             </div>
         </section>
@@ -84,8 +84,8 @@
 <!-- 				<div style="float: left;" > -->
 				<div >
 					<div style="width: 30%; float: left; height: 100%; text-align: center;">
-						<img id="about-img1" style="width: 90%; heigth: 90%;"
-							src="images/p-one.jpg" alt="p-one">
+						<img id="about-img1" style="width: 100%; heigth: 100%;"
+							src="images/profile/one.jpg" alt="p-one">
 					</div>
 					<div
 						style="width: 70%; float: left; height: 100%; padding-left: 5%">
@@ -253,6 +253,10 @@
 							style="background-image: url('images/logo/svn.jpg');">
 							<div class="Skill_label">초급</div>
 						</div>
+						<div class="Skill_image_container"
+							style="background-image: url('images/logo/aws.jpg');">
+							<div class="Skill_label">입문</div>
+						</div>
 					</div>					
                 </div>
             </div>
@@ -316,7 +320,7 @@
 						<a class="etcalink" href="https://github.com/hak2da/roomproject" target="_blank">
 							<img title="View on Github" class="gitimg" src="images/logo/svg/github-logo.svg" alt="github"/>
 						</a>
-						<a class="etcalink" id="roomprojectpreview" data-fancybox="test" href="images/preview/oneroomplanet/roomsite.png">
+						<a class="etcalink" id="roomprojectpreview" data-fancybox="room" href="images/preview/oneroomplanet/roomsite.png">
 							<img title="Preview" class="previewimg" src="images/logo/svg/preview.png" alt="preview"/>
 						</a>
 						<a class="etcalink" href="http://www.oneroomplanet.kro.kr/roomProject/" target="_blank">
@@ -327,13 +331,15 @@
 						</div>
 					</div>
 					
-					<img style="display:none;" data-fancybox="test" src="images/preview/oneroomplanet/방내놓기.png">
-					<img style="display:none;" data-fancybox="test" src="images/preview/oneroomplanet/회원가입.png">
-					<img style="display:none;" data-fancybox="test" src="images/preview/oneroomplanet/카카오맵.png">
+					<img style="display:none;" data-fancybox="room" src="images/preview/oneroomplanet/방내놓기.png">
+					<img style="display:none;" data-fancybox="room" src="images/preview/oneroomplanet/회원가입.png">
+					<img style="display:none;" data-fancybox="room" src="images/preview/oneroomplanet/카카오맵.png">
 					
 					<div class="itembox">
 						<div class="leftimgbox">
-							<img class="leftimg" src="images/p-one.jpg">
+						<a href="javascript:void(0);" onclick="callfunction('comicprojectpreview')"  >
+							<img class="leftimg" src="images/preview/comicclerk/comic_image.png">
+						</a>
 						</div>
 						<div class="rightcontentbox">
 						<h3 class="rightcontenttitle">코믹서기</h3>
@@ -378,10 +384,10 @@
 						<a class="etcalink" href="https://github.com/hak2da/comicclerk" target="_blank">
 							<img title="View on Github" class="gitimg" src="images/logo/svg/github-logo.svg" alt="github"/>
 						</a>
-						<a class="etcalink" href="https://www.naver.com/" target="_blank">
+						<a class="etcalink" id="comicprojectpreview" data-fancybox="comic" href="images/preview/comicclerk/1-메인.png">
 							<img title="Preview" class="previewimg" src="images/logo/svg/preview.png" alt="preview"/>
 						</a>
-						<a class="etcalink" href="https://www.naver.com/" target="_blank">
+						<a class="etcalink" href="http://www.comicclerk.kro.kr/" target="_blank">
 							<img title="View on Web" class="weblinkimg" src="images/logo/svg/icon-website-png.png" alt="web"/>
 						</a>
 						</div>
@@ -389,9 +395,13 @@
 						</div>
 					</div>
 					
+					<img style="display:none;" data-fancybox="comic" src="images/preview/comicclerk/2-erp첫화면.png">
+					<img style="display:none;" data-fancybox="comic" src="images/preview/comicclerk/3-직원화면.png">
+					<img style="display:none;" data-fancybox="comic" src="images/preview/comicclerk/4-직원추가.png">
+					<img style="display:none;" data-fancybox="comic" src="images/preview/comicclerk/5-출근표.png">
+					<img style="display:none;" data-fancybox="comic" src="images/preview/comicclerk/6-근태기록표.png">
+					<img style="display:none;" data-fancybox="comic" src="images/preview/comicclerk/7-채팅.png">
 					
-					
-
                 </div>
             </div>
         </section>
@@ -415,7 +425,7 @@
             <div class="container contact-container">
                 <h3 class="contact-title">Contact</h3>
                 <div style="text-align:center; margin-top:5%" class="contact-outer-wrapper">
-                <p class="add-title">Tel : 82)010-8923-1234</p>
+                <p class="add-title">Tel : 82)010-8923-9966</p>
                 <p class="add-title">Email : hak2daa@gmail.com</p>
                 </div>
             </div>
@@ -467,7 +477,7 @@
 			
 			$("#about-img1").fadeOut();
 			//$("#about-img1").attr("src", "images/p-one.jpg");
-			setTimeout(function(){$("#about-img1").attr("src", "images/p-six.jpg")},500);
+			setTimeout(function(){$("#about-img1").attr("src", "images/profile/two.jpg")},500);
 			$("#about-img1").fadeIn(700);
 			//$("#about-img2").fadeOut(1000);
 
@@ -478,7 +488,7 @@
 			//$("#about-img1").fadeIn(1000);
 			$("#about-img1").fadeOut();
 			//$("#about-img1").attr("src", "images/p-six.jpg");
-			setTimeout(function(){$("#about-img1").attr("src", "images/p-one.jpg")},500);
+			setTimeout(function(){$("#about-img1").attr("src", "images/profile/one.jpg")},500);
 			$("#about-img1").fadeIn(700);
 
 			logo = 3;
@@ -486,7 +496,7 @@
 		}else if(logo ==3){
 			$("#about-img1").fadeOut();
 			//$("#about-img1").attr("src", "images/p-six.jpg");
-			setTimeout(function(){$("#about-img1").attr("src", "images/p-three.jpg")},500);
+			setTimeout(function(){$("#about-img1").attr("src", "images/profile/two.jpg")},500);
 			$("#about-img1").fadeIn(700);
 
 			logo = 1;
