@@ -70,8 +70,8 @@
         <section id="HeroBanner">
             <div class="hero-content">
             
-                <font style="font-size:80px;font-weight:600;color:white; width:100%;" id="bannermain">안녕하세요</font><br>
-                <font style="font-size:60px;font-weight:600;color:white;width:100%;" id="bannersub">개발자 옥영학 포트폴리오입니다.</font>
+                <font class="title1" id="bannermain">안녕하세요</font><br>
+                <font class="title2" id="bannersub">개발자 옥영학 포트폴리오입니다.</font>
 <!--                 <a href="#" class="hero-cta">Get Started</a> -->
             </div>
         </section>
@@ -82,14 +82,13 @@
 			<div class="container">
 			<div class="about-wrapper">
 <!-- 				<div style="float: left;" > -->
-				<div >
-					<div style=" width: 30%; height: 100%; float: left; height: 100%; text-align: center;">
+				<div>
+					<div class="about-imgbox">
 						<img id="about-img1" style="margin-top:15%; left:50%; width:100%; heigth: 100%;"
 							src="images/profile/one.jpg" alt="p-one">
 					</div>
-					<div
-						style="width: 70%; float: left; height: 100%; padding-left: 5%">
-						<h2>About Me</h2>
+					<div class="about-textbox">
+						<h2 class="aboutme">About Me</h2>
 						<p>
 							어렸을때 부터 만드는 것을 좋아했고  
 							모터가 회전하는 원리,신호등에 맞춰서 움직이는 자동차같은 사물에 대한 호기심이 가득했습니다.<br>
@@ -115,22 +114,21 @@
             <div style="margin-top:8%;" class="container">
                 <div class="block-heading">
                 <div  class="resume-wrapper">
-                    <h2 style="width:10%;maring-left:0;">Resume</h2>
+                    <h2 class="resumebigtitle" >Resume</h2>
 	                    <h4 style="width:30%;margin-top:2%;margin-left:5%; text-align:left;left:0;">Education</h4>
-	                    <ul style="width:70%;margin-left:10%; text-align:left">
+	                    <ul style="width:100%;margin-left:10%; text-align:left">
 	                    
-	                    	<li > 2014.02 창원 폴리텍 자동화 시스템과 졸업 </li>
-	                    	
+	                    	<li> 2014.02 창원 폴리텍 자동화 시스템과 졸업 </li>
 	                    	<li> 2016.10~12 ITBANK 안드로이드 어플 개발자 과정 </li>
 	                    	<li> 2019.05~11 비트캠프 자바기반 웹,앱 개발자과정 </li>
 	                    </ul>
-	                    <h4 style="width:30%;margin-top:2%;margin-left:5%; text-align:left;left:0;">Work Experience</h4>
-	                    <ul style="width:70%;margin-left:10%;text-align:left;">
+	                    <h4 style="width:100%;margin-top:2%;margin-left:5%; text-align:left;left:0;">Work Experience</h4>
+	                    <ul style="width:100%;margin-left:10%;text-align:left;">
 	                    	<li> 2014.10~15.12 GEM근무 (PLC프로그램 설계) </li>
 	                    	<li> 2019.11~20.04 IT회사 인턴 </li>
 	                    </ul>
 	                    <h4 style="width:30%;margin-top:2%;margin-left:5%; text-align:left;left:0;">Project</h4>
-	                    <ul style="width:70%;margin-left:10%;text-align:left;">
+	                    <ul style="width:100%;margin-left:10%;text-align:left;">
 	                    	<li> 2016.12 서로의 위치를 알려주는 어플 </li>
 	                    	<li> 2019.08 원룸 플래닛 개발(mvc2패턴) </li>
 	                    	<li> 2019.10 만화 카페 운영 프로그램(ERP,스프링) </li>
@@ -495,7 +493,6 @@
 			//$("#about-img1").attr("src", "images/p-six.jpg");
 			setTimeout(function(){$("#about-img1").attr("src", "images/profile/one.jpg")},500);
 			$("#about-img1").fadeIn(700);
-
 			logo = 1;
 
 		}else if(logo ==3){
