@@ -12152,18 +12152,6 @@ ul, li {
 	-o-animation: fadeout1 .5s
 }
 
-@media ( max-width :576px) {
-	.Skill_image_container {
-		width: 100px;
-		height: 100px;
-		margin: 5px;
-	}
-	.Skill_label {
-		width: 100px;
-		height: 100px;
-	}
-}
-
 .Skill_label {
 	display: flex;
 	justify-content: center;
@@ -12179,6 +12167,20 @@ ul, li {
 	color: #fff;
 	visibility: hidden;
 }
+
+@media ( max-width :576px) {
+	.Skill_image_container {
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+	.Skill_label {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+
 
 /* porfolio style goes here */
 #Portfolio {
@@ -12375,6 +12377,48 @@ ul, li {
 	text-align: left;
 }
 
+
+
+@media ( max-width :1200px) {
+	#Portfolio .rightcontentintroductleft{
+		width:30%;
+		font-size:14px;
+	}
+	#Portfolio .rightcontentintroductright{
+		width:60%;
+			font-size:14px;
+	}
+	
+	#Portfolio .rightcontentlineleft{
+		width:30%;
+			font-size:14px;
+	}
+	#Portfolio .rightcontentlineright{
+		width:60%;
+			font-size:14px;
+	}
+}
+
+@media ( max-width :576px) {
+	#Portfolio .rightcontentintroductleft{
+		width:25%;
+	}
+	#Portfolio .rightcontentintroductright{
+		width:65%;
+	}
+	
+	#Portfolio .rightcontentlineleft{
+		width:25%;
+	}
+	#Portfolio .rightcontentlineright{
+		width:65%;
+	}
+	
+	#Portfolio .itembox{
+		margin-top:8%;
+	}
+}
+
 #Portfolio .etcbox {
 	width: 100%;
 	text-align: center;
@@ -12397,6 +12441,21 @@ ul, li {
 #Portfolio .weblinkimg {
 	width: 65px;
 	height: 65px;
+}
+
+@media ( max-width :576px) {
+	#Portfolio .gitimg {
+		width: 40px;
+		height: 40px;
+	}	
+	#Portfolio .previewimg {
+	width: 50px;
+	height: 50px;
+	}
+	#Portfolio .weblinkimg {
+	width: 55px;
+	height: 55px;
+	}
 }
 
 .fancybox-toolbar button {
