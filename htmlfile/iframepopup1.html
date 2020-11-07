@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-ｅquiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+
+<style type="text/css">
+ #popup{
+  position: absolute;
+  width : 300px;
+  height : 300px;
+  top : 25px;
+  left : 15px;
+  border : 3px solid Red;
+  background: yellow;
+ }
+ 
+ #view {
+  width : 296px;
+  height : 270px;
+  border : 1px solid black;
+ }
+</style>
+
+<script type="text/javascript">
+ window.btn1 = function() {
+  popup = document.createElement("div");
+  iframe = document.createElement("iframe");
+  closeBtn = document.createElement("button");
+
+  iframe.src = "https://www.youtube.com/embed/AgZLX-n2rpo?start=350&end=498";
+  iframe.id = "view";
+  popup.id = "popup";
+  closeBtn.innerHTML = "닫기";
+
+  popup.appendChild(iframe);
+  popup.appendChild(closeBtn);
+  document.body.appendChild(popup);
+
+  closeBtn.onclick = function() {
+   document.body.removeChild(popup);
+  }
+ };
+</script>
+
+</head>
+<body>
+ <button id="btn" onclick="btn1()">팝업 메세지 보기</button>
+</body>
+</html>l>

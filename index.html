@@ -341,6 +341,9 @@
 						<a class="etcalink" id="roomprojectpreview" data-fancybox="room" href="images/preview/oneroomplanet/roomsite.png">
 							<img title="Preview" class="previewimg" src="images/logo/svg/preview.png" alt="preview"/>
 						</a>
+						<a data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/AgZLX-n2rpo?start=85&end=196" href="javascript:;">
+							<img title="Preview" class="previewtube" src="images/logo/svg/u_pre2.png" alt="preview"/>
+						</a>
 						<a class="etcalink" href="http://www.oneroomplanet.kro.kr/roomProject/" target="_blank">
 							<img title="View on Web" class="weblinkimg"  src="images/logo/svg/icon-website-png.png" alt="web"/>
 						</a>
@@ -352,6 +355,7 @@
 					<img style="display:none;" data-fancybox="room" href="images/preview/oneroomplanet/방내놓기.png">
 					<img style="display:none;" data-fancybox="room" href="images/preview/oneroomplanet/회원가입.png">
 					<img style="display:none;" data-fancybox="room" href="images/preview/oneroomplanet/카카오맵.png">
+					<iframe style="display:none;" width="1280" height="720" data-fancybox="room" src="https://www.youtube.com/embed/AgZLX-n2rpo?start=85&end=196" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 <!--                 원룸플래닛 끝 -->
 <!--                 코믹서기 시작 -->
 					<div class="itembox">
@@ -406,6 +410,9 @@
 						<a class="etcalink" id="comicprojectpreview" data-fancybox="comic" href="images/preview/comicclerk/1-메인.png">
 							<img title="Preview" class="previewimg" src="images/logo/svg/preview.png" alt="preview"/>
 						</a>
+						<a data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/AgZLX-n2rpo?start=197&end=323" href="javascript:;">
+							<img title="Preview" class="previewtube" src="images/logo/svg/u_pre2.png" alt="preview"/>
+						</a>
 						<a class="etcalink" href="http://www.comicclerk.kro.kr/" target="_blank">
 							<img title="View on Web" class="weblinkimg" src="images/logo/svg/icon-website-png.png" alt="web"/>
 						</a>
@@ -420,6 +427,7 @@
 					<img style="display:none;" data-fancybox="comic" href="images/preview/comicclerk/5-출근표.png">
 					<img style="display:none;" data-fancybox="comic" href="images/preview/comicclerk/6-근태기록표.png">
 					<img style="display:none;" data-fancybox="comic" href="images/preview/comicclerk/7-채팅.png">
+					<iframe style="display:none;" width="1280" height="720" data-fancybox="comic" src="https://www.youtube.com/embed/AgZLX-n2rpo?start=197&end=323" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 					</div>
 <!--                 코믹서기 끝 -->
 <!--                 소스 메이트 시작 -->
@@ -483,9 +491,9 @@
 						</div>
 						  
 						</div>
-					</div>
+					</div>					
 					
-					<img style="display:none;" data-fancybox="brainp" href="images/preview/brainp/메인화면.png">
+					<img style="display:none;" data-fancybox="sourcemate" href="images/preview/sourcemate/source-previewimg.png">
 <!--                 소스 메이트 끝 -->	
 <!--                 브레인 피지컬 시작 -->
 
@@ -537,9 +545,14 @@
 
 						<div class="etcbox">
 
-						<a class="etcalink" id="brainppreview" data-fancybox="brainp" href="images/preview/brainp/메인화면.png">
+						<a class="etcalink" data-fancybox="brainp" href="images/preview/brainp/메인화면.png">
 							<img title="Preview" class="previewimg" src="images/logo/svg/preview.png" alt="preview"/>
 						</a>
+						
+						<a data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/AgZLX-n2rpo?start=350&end=498" href="javascript:;">
+							<img title="Preview" class="previewtube" src="images/logo/svg/u_pre2.png" alt="preview"/>
+						</a>
+						
 						<a class="etcalink" href="https://hak2da.github.io/commonsense/Main_lobby.html" target="_blank">
 							<img title="View on Web" class="weblinkimg" src="images/logo/svg/icon-website-png.png" alt="web"/>
 						</a>
@@ -552,6 +565,8 @@
 					<img style="display:none;" data-fancybox="brainp" href="images/preview/brainp/게임대기실.png">
 					<img style="display:none;" data-fancybox="brainp" href="images/preview/brainp/게임점수화면.png">
 					<img style="display:none;" data-fancybox="brainp" href="images/preview/brainp/점수화면.png">
+					<iframe style="display:none;" width="1280" height="720" data-fancybox="brainp" src="https://www.youtube.com/embed/AgZLX-n2rpo?start=350&end=498" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					
 <!--                 브레인 피지컬 끝 -->	
 
 				
@@ -661,6 +676,15 @@
 	function callfunction(trig){
 		$("#"+trig).trigger("click");
 	}
+	
+	$('[data-fancybox]').fancybox({
+		toolbar  : false,
+		smallBtn : true,
+		iframe : {
+			preload : false
+		}
+	})
+	
 </script>
 
 </html>
